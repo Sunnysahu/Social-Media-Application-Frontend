@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { FaAlignJustify } from "react-icons/fa";
 
 function StoryLayoutComponent() {
-      const [count, setCount] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+      const [count, setCount] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]);
   return (
     <div className="w-full flex items-center">
       <div className="flex overflow-x-auto">
@@ -10,9 +10,9 @@ function StoryLayoutComponent() {
           {count.map((item) => (
             <div
               key={item}
-              className="bg-amber-400 w-[10vw] h-[10vw] rounded-full border-2 border-white flex items-center justify-center mr-2.5 shrink-0"
+              className="bg-amber-400 w-[15vw] h-[15vw] lg:w-[7vw] lg:h-[7vw] rounded-full border-2 border-white flex items-center justify-center mr-2.5 shrink-0"
             >
-              <span className="text-[2vw] text-center truncate overflow-hidden">
+              <span className="text-[1vw] text-center truncate overflow-hidden">
                 {"Story " + item}
               </span>
             </div>
