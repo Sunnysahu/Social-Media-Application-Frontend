@@ -29,7 +29,6 @@ function PostComponent() {
 
           <div className="text-xl">...</div>
         </div>
-
         {/* Post Text */}
         <div className="mt-4 text-gray-800">
           <p>
@@ -45,17 +44,16 @@ function PostComponent() {
             </button>
           )}
         </div>
+        {/* // src="../../public/square.jpeg" */}
+        <div className="w-full mt-[2vh] mb-[1.5vh]">
+  <img
+    src="../../public/square.jpeg"
+    // src="../../public/frontend.png"
+    alt="Post"
+    className="w-full h-auto object-contain"
+  />
+</div>
 
-        {/* Post Image */}
-        <div className="w-full mt-[4vh] aspect-[4/3] lg:aspect-auto">
-          <img
-            src="../../public/frontend.png"
-            alt="Post"
-            className="w-full h-auto object-contain rounded bg-amber-200"
-          />
-        </div>
-
-        {/* Like / Comment / Share */}
         <LikeComponent />
       </div>
     </div>

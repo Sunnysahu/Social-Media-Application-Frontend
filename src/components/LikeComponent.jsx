@@ -6,7 +6,7 @@ import color from "../utils/color.js";
 function LikeComponent() {
   return (
     <div>
-      <div className=" flex justify-around items-center py-2 text-black">
+      <div className=" flex justify-around items-center text-black">
         <button type="button" className="flex items-center gap-1">
           <FaThumbsUp color={color.black} /> Like
         </button>
