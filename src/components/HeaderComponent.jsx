@@ -8,7 +8,7 @@ import color from "../utils/color";
 function HeaderComponent() {
   return (
     <div className="w-full">
-      <div className=" flex justify-between items-center px-[2vw] pt-[6vw] lg:p-[2vw]">
+      <div className=" flex justify-between items-center px-[3vw] pt-[6vw] lg:p-[2vw]">
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/375px-Google_2015_logo.svg.png"
           alt="Website Logo"
