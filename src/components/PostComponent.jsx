@@ -11,7 +11,7 @@ function PostComponent() {
   const displayedText = isExpanded ? text : text.slice(0, 150);
 
   return (
-    <div className=" w-full px-[4vw] py-[2vw] flex flex-col items-start lg:items-center">
+    <div className="w-full px-[4vw] py-[2vw] pb-[70px] flex flex-col items-start lg:items-center">
       <div className="w-full max-w-2xl p-2 lg:w-[40vw] lg:border-2 shadow-md rounded-lg">
         {/* Top Section */}
         <div className="flex justify-between items-start">
