@@ -3,12 +3,21 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 
+import { FaAlignJustify } from "react-icons/fa"; 
+// https://react-icons.github.io/react-icons/icons/fa/
+
+import PostComponent from "./components/PostComponent.jsx";
+
+
+
 function App() {
   const [count, setCount] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 
   return (
     <>
-      <div className="flex flex-col  h-screen "> /* justify-between /*
+      <div className="flex flex-col  h-screen ">
+        {" "}
+        {/* justify-between  */}
         <div className="w-full bg-green-400">
           <div className=" flex justify-between items-center p-[6vw] lg:p-[2vw]">
             <img
@@ -22,7 +31,6 @@ function App() {
             </div>
           </div>
         </div>
-
         <div className="bg-green-100 w-full flex items-center">
           <div className="flex overflow-x-auto">
             <div className="p-3 flex flex-nowrap">
@@ -38,16 +46,11 @@ function App() {
               ))}
             </div>
           </div>
-          <div className="mx-1 md:mx-8">Ham</div>
+          <div className="mx-1 md:mx-8">        <FaAlignJustify />
+</div>
         </div>
-
-        <div className="bg-gray-300 w-full">
-          <h1>Hello</h1>
-          <h1>sunny</h1>
-          <h1>How</h1>
-          <h1>are</h1>
-          <h1>you</h1>
-        </div>
+        {/* Post Layout */}
+        <PostComponent />
         <div className="bg-blue-300 w-full">
           <h1>Hello</h1>
           <h1>sunny</h1>
