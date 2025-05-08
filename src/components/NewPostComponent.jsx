@@ -4,6 +4,8 @@ import SubmitComponent from "./SubmitComponent";
 import ModalComponent from "./ModalComponent";
 import PostEditorModal from "./PostEditorModal";
 
+
+
 function NewPostComponent() {
   const [showModal, setShowModal] = useState(false);
   const [modalMessage, setModalMessage] = useState("");
@@ -42,8 +44,9 @@ function NewPostComponent() {
   }
 
   return (
-    <div className="w-full px-[4vw] py-[5vw] pb-[70px] flex flex-col items-start lg:items-center">
-      <div className="w-full max-w-2xl p-2 lg:w-[40vw] lg:border-2 shadow-lg rounded-lg flex flex-col lg:flex-row lg:justify-around items-center gap-5">
+    <div className="w-full px-[4vw] py-[5vw] pb-[10px] lg:py-0 flex flex-col items-start lg:items-center">
+      <div className="flex lg:hidden w-full max-w-2xl p-2 lg:w-[40vw] lg:border-2 shadow-lg rounded-lg flex-col lg:flex-row lg:justify-around items-center gap-5">
+
         <InputComponent
           placeholder="Type your post here..."
           classname="w-full p-2 flex text-center border-2 rounded-l border-black lg:border-0 lg:focus:outline-none lg:focus:border-none sm:border-2 sm:border-green"
