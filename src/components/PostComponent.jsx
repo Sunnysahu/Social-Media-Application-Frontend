@@ -21,47 +21,93 @@ function PostComponent() {
 
       {/* Center Content */}
       <div>
-        <div className="flex-grow p-2 lg:border-2 shadow-lg rounded-lg max-w-2xl">
-          <div className="flex justify-between items-start">
-            <div className="flex items-end gap-[7vw]">
-              <div className="flex flex-col gap-1">
-                <div className="font-semibold">sunny.sahu_</div>
-                <div className="text-sm text-gray-700">Brown Rang</div>
+        <div className="pb-[2vw]">
+          <div className="flex-grow p-2 lg:border-2 shadow-lg rounded-lg max-w-2xl">
+            <div className="flex justify-between items-start">
+              <div className="flex items-end gap-[7vw]">
+                <div className="flex flex-col gap-1">
+                  <div className="font-semibold">sunny.sahu_</div>
+                  <div className="text-sm text-gray-700">Brown Rang</div>
+                </div>
+                <div className="flex flex-col gap-1">
+                  <div className="text-sm text-gray-600">20/07/1999</div>
+                  <div className="text-sm text-gray-600">India</div>
+                </div>
               </div>
-              <div className="flex flex-col gap-1">
-                <div className="text-sm text-gray-600">20/07/1999</div>
-                <div className="text-sm text-gray-600">India</div>
-              </div>
+              <div className="text-xl">...</div>
             </div>
-            <div className="text-xl">...</div>
-          </div>
 
-          {/* Post Text */}
-          <div className="mt-4 text-gray-800">
-            <p>
-              {displayedText}
-              {seeMoreButton && !isExpanded && "..."}
-            </p>
-            {seeMoreButton && (
-              <button
-                onClick={toggleReadMore}
-                className="text-blue-600 text-sm underline mt-1"
-              >
-                {isExpanded ? "See less" : "See more"}
-              </button>
-            )}
-          </div>
+            {/* Post Text */}
+            <div className="mt-4 text-gray-800">
+              <p>
+                {displayedText}
+                {seeMoreButton && !isExpanded && "..."}
+              </p>
+              {seeMoreButton && (
+                <button
+                  onClick={toggleReadMore}
+                  className="text-blue-600 text-sm underline mt-1"
+                >
+                  {isExpanded ? "See less" : "See more"}
+                </button>
+              )}
+            </div>
 
-          {/* Image */}
-          <div className="w-full mt-[2vh] mb-[1.5vh]">
-            <img
-              src="../../public/square.jpeg"
-              alt="Post"
-              className="w-full h-auto object-contain"
-            />
-          </div>
+            {/* Image */}
+            <div className="w-full mt-[2vh] mb-[1.5vh]">
+              <img
+                src="../../public/square.jpeg"
+                alt="Post"
+                className="w-full h-auto object-contain"
+              />
+            </div>
 
-          <LikeComponent />
+            <LikeComponent />
+          </div>
+        </div>
+        <div>
+          <div className="flex-grow p-2 lg:border-2 shadow-lg rounded-lg max-w-2xl">
+            <div className="flex justify-between items-start">
+              <div className="flex items-end gap-[7vw]">
+                <div className="flex flex-col gap-1">
+                  <div className="font-semibold">sunny.sahu_</div>
+                  <div className="text-sm text-gray-700">Brown Rang</div>
+                </div>
+                <div className="flex flex-col gap-1">
+                  <div className="text-sm text-gray-600">20/07/1999</div>
+                  <div className="text-sm text-gray-600">India</div>
+                </div>
+              </div>
+              <div className="text-xl">...</div>
+            </div>
+
+            {/* Post Text */}
+            <div className="mt-4 text-gray-800">
+              <p>
+                {displayedText}
+                {seeMoreButton && !isExpanded && "..."}
+              </p>
+              {seeMoreButton && (
+                <button
+                  onClick={toggleReadMore}
+                  className="text-blue-600 text-sm underline mt-1"
+                >
+                  {isExpanded ? "See less" : "See more"}
+                </button>
+              )}
+            </div>
+
+            {/* Image */}
+            <div className="w-full mt-[2vh] mb-[1.5vh]">
+              <img
+                src="../../public/square.jpeg"
+                alt="Post"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+
+            <LikeComponent />
+          </div>
         </div>
       </div>
 
