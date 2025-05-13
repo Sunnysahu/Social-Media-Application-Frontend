@@ -21,16 +21,3 @@ function MainComponent() {
 }
 
 export default MainComponent;
-
-{
-  /* <StoryLayoutComponent />
-<div className=" flex justify-start">
-  <div>
-  <PostComponent images={"../../public/square.jpeg"}/>
-  <PostComponent images={"../../public/frontend.png"}/>
-  <PostComponent images={"../../public/vite.svg"}/>
-  <PostComponent images={"../../public/square.jpeg"}/>
-  </div>
-</div>
-  <StoryLayoutComponent /> */
-}

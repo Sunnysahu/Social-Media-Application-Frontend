@@ -30,7 +30,7 @@ function OnlineLayoutComponent() {
               className="w-full flex items-center mb-[1.7vw] py-[1.8vh] border border-black/40 rounded shadow-md"
             >
 
-              <div className="mx-[1vw] flex justify-center items-center border-2 border-black rounded-full w-12 h-12 text-xs text-center">
+              <div className="mx-[1vw] flex justify-center items-center border-2 border-black rounded-full w-14 h-14 text-xs text-center">
                 {item.lastSeen}
               </div>
 

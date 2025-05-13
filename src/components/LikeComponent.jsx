@@ -1,4 +1,3 @@
-import React from "react";
 import { FaThumbsUp, FaCommentAlt, FaShare } from "react-icons/fa";
 import color from "../utils/color.js";
 import "../index.css";

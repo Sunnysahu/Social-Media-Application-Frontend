@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import InputComponent from "./InputComponent";
 import SubmitComponent from "./SubmitComponent";
 import ModalComponent from "./ModalComponent";
@@ -43,28 +43,29 @@ function NewPostComponent() {
 
   return (
     <div className="w-full min-w-[300px] px-[4vw] py-[5vw] pb-[30px] flex flex-col items-start lg:hidden lg:items-center">
-      <div className="w-full max-w-2xl p-2 lg:w-[40vw] lg:border-2 shadow-lg rounded-lg flex flex-col lg:flex-row lg:justify-around items-center gap-5">
-        <InputComponent
-          placeholder="Type your post here..."
-          classname="w-full p-2 flex text-center border-2 rounded-l border-black lg:border-0 lg:focus:outline-none lg:focus:border-none sm:border-2 sm:border-green"
-          value={text}
-          onChange={handleInputChange}
-          onClick={handleInputClick}
-        />
-        <SubmitComponent onClick={handleSubmit}  />
+  <div className="w-full max-w-full lg:max-w-2xl p-2 lg:w-[40vw] lg:border-2 shadow-lg rounded-lg flex flex-col lg:flex-row lg:justify-around items-center gap-5">
+    <InputComponent
+      placeholder="Type your post here..."
+      classname="w-full p-2 flex text-center border-2 rounded-l border-black lg:border-0 lg:focus:outline-none lg:focus:border-none sm:border-2 sm:border-green"
+      value={text}
+      onChange={handleInputChange}
+      onClick={handleInputClick}
+    />
+    <SubmitComponent onClick={handleSubmit} />
 
-        <ModalComponent message={modalMessage} onClose={handleCloseModal} />
-        {isEditorOpen && (
-          <PostEditorModal
-            value={text}
-            onChange={handleInputChange}
-            onClose={handleEditorClose}
-            onPost={handlepost}
-            onImageUpload={handleImageUpload}
-          />
-        )}
-      </div>
-    </div>
+    <ModalComponent message={modalMessage} onClose={handleCloseModal} />
+    {isEditorOpen && (
+      <PostEditorModal
+        value={text}
+        onChange={handleInputChange}
+        onClose={handleEditorClose}
+        onPost={handlepost}
+        onImageUpload={handleImageUpload}
+      />
+    )}
+  </div>
+</div>
+
   );
 }
 
