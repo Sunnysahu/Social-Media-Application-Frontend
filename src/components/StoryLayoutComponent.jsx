@@ -4,7 +4,7 @@ import { FaAlignJustify } from "react-icons/fa";
 function StoryLayoutComponent() {
       const [count, setCount] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]);
   return (
-    <div className="w-full flex items-center">
+    <div className="w-full min-w-[300px] flex items-center">
       <div className="flex overflow-x-auto">
         <div className="p-[3vw] flex flex-nowrap">
           {count.map((item) => (

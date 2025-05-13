@@ -42,7 +42,7 @@ function NewPostComponent() {
   }
 
   return (
-    <div className="w-full px-[4vw] py-[5vw] pb-[70px] flex flex-col items-start lg:items-center">
+    <div className="w-full min-w-[300px] px-[4vw] py-[5vw] pb-[30px] flex flex-col items-start lg:hidden lg:items-center">
       <div className="w-full max-w-2xl p-2 lg:w-[40vw] lg:border-2 shadow-lg rounded-lg flex flex-col lg:flex-row lg:justify-around items-center gap-5">
         <InputComponent
           placeholder="Type your post here..."

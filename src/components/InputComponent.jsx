@@ -2,7 +2,7 @@ import React from "react";
 
 function InputComponent({ placeholder, classname, value, onChange, onClick }) {
   return (
-    <div className="w-full">
+    <div className="w-full ">
       <input
         type="text"
         placeholder={placeholder}

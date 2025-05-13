@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+@layer utilities {
+  @media (max-width: 300px) {
+    .below-800\:justify-center {
+      @apply justify-center;
+    }
+  }
+}

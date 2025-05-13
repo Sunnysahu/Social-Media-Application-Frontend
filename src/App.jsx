@@ -1,7 +1,7 @@
 import "./App.css";
 
 
-import PostComponent from "./components/PostComponent.jsx";
+import MainComponent from "./components/MainComponent.jsx";
 import HeaderComponent from "./components/HeaderComponent.jsx";
 import StoryLayoutComponent from "./components/StoryLayoutComponent.jsx";
 import FooterComponent from "./components/FooterComponent.jsx";
@@ -19,7 +19,7 @@ function App() {
         <HeaderComponent />
         <StoryLayoutComponent />
         <NewPostComponent />
-        <PostComponent />
+        <MainComponent />
         <FooterComponent />
       </div>
     </>
