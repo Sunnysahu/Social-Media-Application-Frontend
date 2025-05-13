@@ -1,15 +1,12 @@
 import "./App.css";
 
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Outlet } from "react-router-dom";
 
-import MainComponent from "./components/MainComponent.jsx";
 import HeaderComponent from "./components/HeaderComponent.jsx";
-import StoryLayoutComponent from "./components/StoryLayoutComponent.jsx";
-import FooterComponent from "./components/FooterComponent.jsx";
-import NewPostComponent from "./components/NewPostComponent.jsx";
 
+import HomePage from "./Pages/HomePage.jsx";
+import FriendPage from "./Pages/FriendPage.jsx";
 import LogoutPage from "./Pages/LogoutPage.jsx";
-
 
 // https://react-icons.github.io/react-icons/icons/fa/
 
@@ -18,14 +15,12 @@ function App() {
     <>
       <div className="flex flex-col h-screen ">
         <HeaderComponent />
-        <StoryLayoutComponent />
-        <NewPostComponent />
-        <MainComponent />
+
         <Routes>
-        <Route path="/" />
-        <Route path="/logout" element={<LogoutPage />} />
-      </Routes>
-        <FooterComponent />
+          <Route path="/home" element={<HomePage />} />
+          <Route path="/friends" element={<FriendPage />} />
+          <Route path="/logout" element={<LogoutPage />} />
+        </Routes>
       </div>
     </>
   );

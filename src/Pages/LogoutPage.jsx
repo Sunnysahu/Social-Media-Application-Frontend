@@ -1,4 +1,6 @@
-import React from 'react'
+import { Link } from "react-router-dom"
+
+
 
 function LogoutPage() {
   return (
@@ -8,6 +10,8 @@ function LogoutPage() {
      <h1>Good</h1>
      {console.log("Hi") 
      }
+
+     <Link to="/home">Go Back</Link>
     </div>
   )
 }

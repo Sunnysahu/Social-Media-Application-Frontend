@@ -1,5 +1,4 @@
 // ModalComponent.js
-import React from 'react';
 
 function ModalComponent({ message, onClose }) {
   if (!message) return null;
