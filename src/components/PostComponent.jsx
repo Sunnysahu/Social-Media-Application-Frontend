@@ -17,10 +17,9 @@ function PostComponent({ images }) {
         className="w-full max-w-full lg:max-w-xl p-2 bg-gray-100 lg:w-[33vw] lg:border-2 rounded-lg"
         style={{ boxShadow: "0 -4px 10px rgba(0, 0, 0, 0.5)" }}
       >
+        <div className="flex flex-row justify-between items-start w-full flex-wrap">
 
-        <div className="flex justify-between items-start flex-wrap">
-
-          <div className="flex items-end gap-[4vw] w-full lg:w-auto">
+          <div className="flex flex-row gap-[4vw]">
             <div className="flex flex-col gap-1">
               <div className="font-semibold text-sm">sunny.sahu_</div>
               <div className="text-xs text-gray-700">Brown Rang</div>
@@ -30,7 +29,9 @@ function PostComponent({ images }) {
               <div className="text-xs text-gray-600">India</div>
             </div>
           </div>
-          <div className="text-xl mt-2 lg:mt-0">...</div>
+
+
+          <button className="text-xl cursor-pointer ">...</button>
         </div>
 
         <div className="mt-3 text-gray-800 text-sm">
@@ -48,7 +49,6 @@ function PostComponent({ images }) {
           )}
         </div>
 
-
         <div className="w-full mt-2 mb-3">
           <img
             src={images ? images : "../../public/frontend.png"}
@@ -56,7 +56,6 @@ function PostComponent({ images }) {
             className="w-full h-auto object-contain"
           />
         </div>
-
 
         <LikeComponent />
       </div>
