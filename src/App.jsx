@@ -17,7 +17,7 @@ function App() {
     <>
       <div className="flex flex-col h-screen ">
         <HeaderComponent />
-        <StoryLayoutComponent />
+        <StoryLayoutComponent/>
         <NewPostComponent />
         <MainComponent />
         <FooterComponent />

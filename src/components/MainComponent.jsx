@@ -1,15 +1,36 @@
-import {useState} from 'react'
+import { useState } from "react";
 
-import PostComponent from './PostComponent'
+import StoryLeftComponent from "./StoryLeftComponent";
+import OnlineLayoutComponent from "./OnlineLayoutComponent";
+
+import PostComponent from "./PostComponent";
 function MainComponent() {
   return (
-    <div>
-      <PostComponent images={"../../public/square.jpeg"}/>
-      <PostComponent images={"../../public/frontend.png"}/>
-      <PostComponent images={"../../public/vite.svg"}/>
-      <PostComponent images={"../../public/square.jpeg"}/>
+    <div className="w-full  flex flex-row">
+      <StoryLeftComponent />
+      <div>
+        <PostComponent images={"../../public/square.jpeg"} />
+        <PostComponent images={"../../public/frontend.png"} />
+
+        <PostComponent images={"../../public/vite.svg"} />
+      </div>
+      {/* <StoryLayoutComponent /> */}
+      <OnlineLayoutComponent />
     </div>
-  )
+  );
 }
 
-export default MainComponent
+export default MainComponent;
+
+{
+  /* <StoryLayoutComponent />
+<div className=" flex justify-start">
+  <div>
+  <PostComponent images={"../../public/square.jpeg"}/>
+  <PostComponent images={"../../public/frontend.png"}/>
+  <PostComponent images={"../../public/vite.svg"}/>
+  <PostComponent images={"../../public/square.jpeg"}/>
+  </div>
+</div>
+  <StoryLayoutComponent /> */
+}
