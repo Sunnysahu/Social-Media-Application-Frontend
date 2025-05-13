@@ -15,7 +15,7 @@ function StoryLeftComponent() {
   ]);
 
   return (
-    <div className="hidden w-full sm:w-[90%] md:w-[60%] lg:w-[27%] ml-[2vw] lg:flex items-start">
+    <div className="hidden w-full sm:w-[90%] md:w-[60%] lg:w-[27%] ml-[3vw] lg:flex items-start">
       <div className="w-full flex flex-col gap-4 border border-black/50 rounded-xl shadow-2xl pb-1">
 
         <div className="w-full text-center mt-2">

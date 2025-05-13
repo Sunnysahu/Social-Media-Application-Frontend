@@ -3,7 +3,7 @@ import color from "../utils/color.js";
 import "../index.css";
 
 function LikeComponent() {
-  const size = "text-sm sm:text-base md:text-lg bg-gray-200 ";
+  const size = "text-sm sm:text-base md:text-lg bg-gray-200 cursor-pointer ";
   return (
     <div>
       <div className="flex justify-around items-center text-black">

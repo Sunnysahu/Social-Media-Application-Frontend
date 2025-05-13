@@ -6,7 +6,7 @@ import OnlineLayoutComponent from "./OnlineLayoutComponent";
 import PostComponent from "./PostComponent";
 function MainComponent() {
   return (
-    <div className="w-full  flex flex-row">
+    <div className="w-full flex flex-row">
       <StoryLeftComponent />
       <div>
         <PostComponent images={"../../public/square.jpeg"} />

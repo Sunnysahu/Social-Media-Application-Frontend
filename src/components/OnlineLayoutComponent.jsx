@@ -15,7 +15,7 @@ function OnlineLayoutComponent() {
   ]);
 
   return (
-    <div className="w-[27%] ml-[2vw] lg:flex items-start hidden">
+    <div className="w-[27%] ml-[1vw] lg:flex items-start hidden">
       <div className="w-full flex flex-col gap-4 border border-black/50 rounded-xl shadow-2xl pb-1">
 
         <div className="w-full text-center mt-2">

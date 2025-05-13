@@ -12,9 +12,9 @@ function PostComponent({ images }) {
   const size = "text-sm sm:text-base md:text-lg";
 
   return (
-    <div className="px-[2vw] mb-4 flex flex-col items-start ml-[2vw] lg:items-center">
+    <div className=" pl-[2vw] pr-[4vw] lg:pr-[2vw] mb-4 flex flex-col items-start ml-[2vw] lg:items-center">
       <div
-        className="w-full max-w-full lg:max-w-xl p-2 bg-gray-100 lg:w-[35vw] lg:border-2 rounded-lg"
+        className="w-full max-w-full lg:max-w-xl p-2 bg-gray-100 lg:w-[33vw] lg:border-2 rounded-lg"
         style={{ boxShadow: "0 -4px 10px rgba(0, 0, 0, 0.5)" }}
       >
 
