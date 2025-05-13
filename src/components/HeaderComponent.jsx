@@ -1,6 +1,7 @@
-import React from "react";
+
 
 import { FaBell, FaRocketchat  } from "react-icons/fa";
+import NavigationComponent from "./navigationComponent";
 
 import color from "../utils/color";
 
@@ -14,9 +15,7 @@ function HeaderComponent() {
           alt="Website Logo"
           className="w-[40vw] h-auto sm:w-40 md:w-48 lg:w-56 xl:w-64"
         />
-        <div>
-          navbar
-        </div>
+        <NavigationComponent />
         <div className="flex text-white text-[7vw] gap-8 lg:text-[2.5vw]">
           <button type="button"><FaBell color={color.black}/></button>
           <button type="button"><FaRocketchat color={color.black} /></button>
