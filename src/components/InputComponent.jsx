@@ -1,8 +1,8 @@
-function InputComponent({ placeholder, classname, value, onChange, onClick }) {
+function InputComponent({type, placeholder, classname, value, onChange, onClick, mfull }) {
   return (
-    <div className="w-full ">
+    <div className={`${mfull}`}>
       <input
-        type="text"
+        type={type}
         placeholder={placeholder}
         className={` ${classname}`}
         value={value}

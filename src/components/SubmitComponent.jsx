@@ -1,7 +1,9 @@
-function SubmitComponent({onClick}) {
+function SubmitComponent({ onClick, text, classname }) {
   return (
-    <button type="submit" onClick={onClick} className='cursor-pointer bg-gray-100 hover:bg-gray-200 px-[2vw] py-[1vh] rounded-xl'>Post</button>
-  )
+    <button type="submit" onClick={onClick} className={`${classname}`}>
+      {text}
+    </button>
+  );
 }
 
 export default SubmitComponent

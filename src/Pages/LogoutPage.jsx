@@ -11,7 +11,7 @@ function LogoutPage() {
      {console.log("Hi") 
      }
 
-     <Link to="/home">Go Back</Link>
+     <Link to="/">Go Back</Link>
     </div>
   )
 }
