@@ -24,6 +24,7 @@ function App() {
           <Route path="/home" element={<HomePage />} />
           <Route path="/friends" element={<FriendPage />} />
           <Route path="/logout" element={<LogoutPage />} />
+          // More Routes
         </Routes>
       </div>
     </>
