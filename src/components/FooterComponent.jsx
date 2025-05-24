@@ -1,18 +1,18 @@
-import React from "react";
-import { FaHome, FaSearch, FaListAlt, FaSignOutAlt } from "react-icons/fa";
+import { FaHome, FaSearch, FaListAlt, FaSignOutAlt, FaUserFriends, FaInfoCircle   } from "react-icons/fa";
 
 function FooterComponent() {
   const footer = [
     { label: "Home", icon: <FaHome /> },
+    { label: "Friends", icon: <FaUserFriends /> },
     { label: "Search", icon: <FaSearch /> },
+    { label: "Feed", icon: <FaListAlt /> },
     { label: "Feed", icon: <FaListAlt /> },
     { label: "Logout", icon: <FaSignOutAlt /> },
   ];
 
   return (
 
-    <div className="fixed inset-x-0 bottom-0 bg-gray-200 md:hidden z-50" 
-         style={{ paddingBottom: "env(safe-area-inset-bottom)" }}>
+    <div className="fixed inset-x-0 bottom-0 bg-gray-200 md:hidden z-50" >
       <div className="flex border-gray-300">
         {footer.map((item, idx) => (
           <button
