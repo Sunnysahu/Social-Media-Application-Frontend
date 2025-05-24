@@ -6,7 +6,7 @@ function FooterComponent() {
     { label: "Friends", icon: <FaUserFriends /> },
     { label: "Search", icon: <FaSearch /> },
     { label: "Feed", icon: <FaListAlt /> },
-    { label: "Feed", icon: <FaListAlt /> },
+    { label: "About", icon: <FaInfoCircle /> },
     { label: "Logout", icon: <FaSignOutAlt /> },
   ];
 
