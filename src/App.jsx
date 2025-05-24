@@ -18,7 +18,7 @@ function App() {
     <>
       <div className="flex flex-col h-screen ">
       {!isLoginPage && <HeaderComponent />}
-
+      <hr className="mt-3 lg:mt-0 lg:pb-4 mx-[1vw]" />
         <Routes>
           <Route path="/" element={<LoginPage />}/>
           <Route path="/home" element={<HomePage />} />
