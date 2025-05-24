@@ -1,26 +1,25 @@
-import { useState } from "react";
+import StoryLeftComponent from "../components/StoryLeftComponent";
+import OnlineLayoutComponent from "../components/OnlineLayoutComponent";
 
-import { useNavigate } from "react-router-dom";
-import ModalComponent from "../components/ModalComponent";
+import FriendsComponent from "../components/FriendsComponent";
 
 function FriendPage() {
-  const [showModal, setShowModal] = useState(true);
-
-  const navigate = useNavigate()
-
-  const handleCloseModal = () => {
-    setShowModal(false);
-    navigate("/home")
-  };
-
   return (
-    <div>
-      <h1>Hi</h1>
+    <div className="w-full">
+      <div className="flex flex-col lg:flex-row w-full lg:justify-between px-0 lg:px-8 gap-4">
+        <StoryLeftComponent />
 
-      {/* Show modal only when showModal is true */}
-      {showModal && (
-        <ModalComponent message="Logout Successfully" onClose={handleCloseModal} />
-      )}
+        <div className="w-full lg:w-[50%] flex justify-center">
+          <FriendsComponent />
+        </div>
+
+        <OnlineLayoutComponent />
+      </div>
+
+      {/* Optional modal */}
+      {/* {showModal && (
+      <ModalComponent message="Logout Successfully" onClose={handleCloseModal} />
+    )} */}
     </div>
   );
 }
