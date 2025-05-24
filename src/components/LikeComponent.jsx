@@ -9,21 +9,21 @@ function LikeComponent() {
       <div className="flex justify-around items-center text-black">
         <button
           type="button"
-          className={`flex items-center gap-1  py-2 px-3  border-black rounded-2xl  ${size}`}
+          className={`flex items-center gap-1  py-2 px-3 border-black rounded-2xl ${size}`}
         >
-          <FaThumbsUp className={size} /> Like
+          <FaThumbsUp className={size} size={color.textsize}  /> Like
         </button>
         <button
           type="button"
-          className={`flex items-center gap-1  py-2 px-3  border-black rounded-2xl  ${size}`}
+          className={`flex items-center gap-1  py-2 px-3  border-black rounded-2xl ${size}`}
         >
-          <FaCommentAlt className={size} /> Comment
+          <FaCommentAlt className={size} size={14} /> Comment
         </button>
         <button
           type="button"
-          className={`flex items-center gap-1  py-2 px-3  border-black rounded-2xl   ${size}`}
+          className={`flex items-center gap-1  py-2 px-3  border-black rounded-2xl ${size}`}
         >
-          <FaShare className={size} /> Share
+          <FaShare className={size} size={color.textsize} /> Share
         </button>
       </div>
     </div>
